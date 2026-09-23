@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дмитрий Шостакович — 120 лет | Официальный профиль</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ==========================================
+       1. СТИЛИ И ПЕРЕМЕННЫЕ (Dark / Soft Academia)
+       ========================================== */
+    :root {
+      --bg-dark: #11141a;
+      --bg-card: #181d27;
+      --bg-card-hover: #1f2634;
+      --bg-input: #0f1218;
+      --gold-primary: #d4af37;
+      --gold-light: #f3e5ab;
+      --gold-dark: #997a15;
+      --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f7e7a9 50%, #b8860b 100%);
+      --text-main: #f2eae1;
+      --text-muted: #9aa4b2;
+      --border-color: rgba(212, 175, 55, 0.22);
+      --border-color-hover: rgba(212, 175, 55, 0.5);
+      --radius-main: 16px;
+      --radius-sm: 10px;
+      --shadow-gold: 0 4px 20px rgba(212, 175, 55, 0.12);
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      padding-bottom: 60px;
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.03) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(184, 134, 11, 0.03) 0%, transparent 40%);
+    }
+
+    /* Ограничитель ширины */
+    .app-container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 12px;
+    }
+
+    /* ==========================================
+       2. ШАПКА ПРОФИЛЯ
+       ========================================== */
+    .profile-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-main);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      margin-top: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-banner {
+      height: 180px;
+      background: linear-gradient(to bottom, rgba(17, 20, 26, 0.2), rgba(24, 29, 39, 0.95)),
+                  url('https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg') center/cover no-repeat;
+      position: relative;
+    }
+
+    .profile-header-content {
+      padding: 0 20px 20px 20px;
+      position: relative;
+      margin-top: -60px;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .avatar-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--gold-primary);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+      background: var(--bg-card);
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+      background: var(--gold-gradient);
+      color: #111;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: bold;
+      border: 2px solid var(--bg-card);
+    }
+
+    .profile-info {
+      margin-top: 12px;
+    }
+
+    .profile-name-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .profile-name {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+
+    .profile-username {
+      color: var(--gold-primary);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .profile-bio {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .profile-status {
+      margin-top: 12px;
+      padding: 10px 14px;
+      background: rgba(212, 175, 55, 0.07);
+      border-left: 3px solid var(--gold-primary);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-style: italic;
+      font-size: 13px;
+      color: var(--gold-light);
+    }
+
+    .profile-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: none;
+      outline: none;
+    }
+
+    .btn-primary {
+      background: var(--gold-gradient);
+      color: #111;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+    }
+
+    .btn-primary.subscribed {
+      background: transparent;
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-primary);
+      box-shadow: none;
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-main);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* ==========================================
+       3. ГЛАВНЫЙ МУЗЫКАЛЬНЫЙ ПЛЕЕР (АУДИО НА САЙТЕ)
+       ========================================== */
+    .music-widget {
+      background: linear-gradient(145deg, rgba(24, 29, 39, 0.95), rgba(15, 18, 24, 0.98));
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-main);
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-gold);
+    }
+
+    .music-widget-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .music-title-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gold-primary);
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .music-player-body {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .album-cover {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      background: #222;
+      object-fit: cover;
+      border: 1px solid var(--gold-primary);
+      flex-shrink: 0;
+    }
+
+    .player-details {
+      flex-grow: 1;
+      overflow: hidden;
+    }
+
+    .track-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .track-author {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .audio-controls-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .play-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--gold-gradient);
+      color: #111;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+
+    .play-btn:active {
+      transform: scale(0.92);
+    }
+
+    .progress-container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .progress-bar-bg {
+      width: 100%;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: var(--gold-gradient);
+      border-radius: 3px;
+      transition: width 0.1s linear;
+    }
+
+    .time-display {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* Эквалайзер анимация */
+    .eq-bar-container {
+      display: flex;
+      align-items: flex-end;
+      gap: 2px;
+      height: 16px;
+    }
+
+    .eq-bar {
+      width: 3px;
+      background: var(--gold-primary);
+      border-radius: 1px;
+      height: 4px;
+    }
+
+    .playing .eq-bar:nth-child(1) { animation: eq 0.6s infinite alternate; }
+    .playing .eq-bar:nth-child(2) { animation: eq 0.8s infinite alternate 0.2s; }
+    .playing .eq-bar:nth-child(3) { animation: eq 0.5s infinite alternate 0.4s; }
+
+    @keyframes eq {
+      0% { height: 4px; }
+      100% { height: 16px; }
+    }
+
+    /* ==========================================
+       4. НАВИГАЦИОННЫЕ ВКАДКИ
+       ========================================== */
+    .nav-tabs {
+      display: flex;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-main);
+      padding: 6px;
+      margin-bottom: 20px;
+      position: sticky;
+      top: 10px;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 12px 8px;
+      text-align: center;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 14px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .tab-btn.active {
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-light);
+      border: 1px solid var(--border-color);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* ==========================================
+       5. ЛЕНТА ПОСТОВ
+       ========================================== */
+    .post-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-main);
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .post-author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--gold-primary);
+    }
+
+    .post-author-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .post-author-name {
+      font-weight: 700;
+      font-size: 15px;
+      color: #fff;
+    }
+
+    .post-time {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .post-text {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text-main);
+      margin-bottom: 14px;
+      white-space: pre-line;
+    }
+
+    .post-media {
+      margin-bottom: 14px;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .post-media img {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .post-hashtags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    .hashtag {
+      color: var(--gold-primary);
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* Анимация нот при лайке */
+    .post-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      position: relative;
+    }
+
+    .like-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    .like-btn.liked {
+      color: var(--gold-primary);
+    }
+
+    .like-icon {
+      font-size: 18px;
+    }
+
+    .flying-note {
+      position: absolute;
+      color: var(--gold-primary);
+      font-size: 20px;
+      pointer-events: none;
+      animation: floatNote 1s forwards ease-out;
+      z-index: 10;
+    }
+
+    @keyframes floatNote {
+      0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(calc(var(--dx) * 1px), -60px) scale(1.4) rotate(20deg);
+      }
+    }
+
+    /* Комментарии */
+    .comments-section {
+      margin-top: 16px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: var(--radius-sm);
+      padding: 14px;
+    }
+
+    .comment-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .comment-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .comment-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+    }
+
+    .comment-content {
+      background: rgba(255, 255, 255, 0.04);
+      padding: 8px 12px;
+      border-radius: 12px;
+      flex-grow: 1;
+      font-size: 13px;
+    }
+
+    .comment-author {
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 2px;
+    }
+
+    .comment-text {
+      color: var(--text-main);
+      line-height: 1.4;
+    }
+
+    .add-comment-box {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .comment-input {
+      flex-grow: 1;
+      background: var(--bg-input);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 8px 14px;
+      color: #fff;
+      font-size: 13px;
+      outline: none;
+    }
+
+    .comment-input:focus {
+      border-color: var(--gold-primary);
+    }
+
+    .send-comment-btn {
+      background: var(--gold-gradient);
+      border: none;
+      color: #111;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================
+       6. ВКАДКА "МЕССЕНДЖЕР"
+       ========================================== */
+    .messenger-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-main);
+      display: flex;
+      height: 600px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .chat-sidebar {
+      width: 35%;
+      border-right: 1px solid var(--border-color);
+      background: rgba(15, 18, 24, 0.6);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chat-list {
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+
+    .chat-item {
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      transition: background 0.2s;
+    }
+
+    .chat-item:hover, .chat-item.active {
+      background: rgba(212, 175, 55, 0.1);
+    }
+
+    .chat-item-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--gold-primary);
+      flex-shrink: 0;
+    }
+
+    .chat-item-info {
+      overflow: hidden;
+      flex-grow: 1;
+    }
+
+    .chat-item-name {
+      font-weight: 600;
+      font-size: 13px;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .chat-item-preview {
+      font-size: 11px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Окно активного чата */
+    .chat-window {
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-card);
+    }
+
+    .chat-header {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .chat-messages {
+      flex-grow: 1;
+      padding: 16px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .msg-date-divider {
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin: 8px 0;
+      position: relative;
+    }
+
+    .msg-bubble {
+      max-width: 80%;
+      padding: 10px 14px;
+      border-radius: 16px;
+      font-size: 13px;
+      line-height: 1.5;
+      position: relative;
+    }
+
+    .msg-in {
+      align-self: flex-start;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-main);
+      border-bottom-left-radius: 4px;
+    }
+
+    .msg-out {
+      align-self: flex-end;
+      background: var(--gold-gradient);
+      color: #111;
+      font-weight: 500;
+      border-bottom-right-radius: 4px;
+    }
+
+    .typing-indicator {
+      font-style: italic;
+      font-size: 12px;
+      color: var(--gold-light);
+      padding: 4px 8px;
+      display: none;
+    }
+
+    .chat-footer {
+      padding: 12px;
+      border-top: 1px solid var(--border-color);
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .quick-replies {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .reply-btn {
+      padding: 8px 12px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--border-color);
+      color: var(--gold-light);
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .reply-btn:hover {
+      background: var(--gold-primary);
+      color: #111;
+    }
+
+    /* ==========================================
+       7. ВКАДКА "ТЕСТ"
+       ========================================== */
+    .quiz-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-main);
+      padding: 24px;
+      box-shadow: var(--shadow-gold);
+    }
+
+    .quiz-header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .quiz-title {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      color: var(--gold-light);
+      margin-bottom: 6px;
+    }
+
+    .quiz-question {
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .q-title {
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .q-options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .q-option-label {
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.2s ease;
+    }
+
+    .q-option-label:hover {
+      background: rgba(212, 175, 55, 0.08);
+      border-color: var(--border-color);
+    }
+
+    .q-option-label input {
+      accent-color: var(--gold-primary);
+    }
+
+    .quiz-result {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid var(--gold-primary);
+      border-radius: var(--radius-main);
+      margin-top: 20px;
+    }
+
+    .quiz-result-title {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      color: var(--gold-light);
+      margin-bottom: 10px;
+    }
+
+    .quiz-result-desc {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    /* Адаптивность под мобильные устройства */
+    @media (max-width: 600px) {
+      .profile-banner { height: 130px; }
+      .avatar-img { width: 85px; height: 85px; }
+      .profile-header-content { margin-top: -45px; padding: 0 14px 14px 14px; }
+      .profile-name { font-size: 22px; }
+      .messenger-container { flex-direction: column; height: 550px; }
+      .chat-sidebar { width: 100%; height: 35%; }
+      .chat-window { width: 100%; height: 65%; }
+      .tab-btn { font-size: 12px; padding: 10px 4px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- ==========================================
+         ШАПКА ПРОФИЛЯ
+         ========================================== -->
+    <div class="profile-card">
+      <div class="profile-banner"></div>
+      <div class="profile-header-content">
+        <div class="avatar-wrapper">
+          <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" alt="Дмитрий Шостакович" class="avatar-img">
+          <div class="verified-badge" title="Подтвержденный профиль">✓</div>
+        </div>
+
+        <div class="profile-info">
+          <div class="profile-name-row">
+            <h1 class="profile-name">Дмитрий Шостакович</h1>
+            <span class="profile-username">@dd_shostakovich</span>
+          </div>
+
+          <p class="profile-bio">
+            Композитор, пианист, педагог. Страстный болельщик ФК «Зенит» ⚽, судья 1-й категории. Пишу симфонии, киномузыку и оперы 🎼.
+          </p>
+
+          <div class="profile-status">
+            «Любите и изучайте великое искусство музыки. Оно откроет вам целый мир высоких чувств...»
+          </div>
+
+          <div class="profile-actions">
+            <button class="btn btn-primary" id="subscribeBtn" onclick="toggleSubscribe()">
+              <span>+ Подписаться</span>
+            </button>
+            <button class="btn btn-secondary" onclick="switchTab('messenger')">
+              ✉ Сообщение
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         ГЛАВНЫЙ МУЗЫКАЛЬНЫЙ ПЛЕЕР (НА САЙТЕ)
+         ========================================== -->
+    <div class="music-widget">
+      <div class="music-widget-header">
+        <div class="music-title-badge">
+          <span>🎼</span> Музыкальная подборка Шостаковича
+        </div>
+        <div class="eq-bar-container" id="mainEq">
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+        </div>
+      </div>
+
+      <div class="music-player-body">
+        <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="album-cover" id="playerCover" alt="Обложка">
+        
+        <div class="player-details">
+          <div class="track-name" id="trackTitle">Вальс №2</div>
+          <div class="track-author" id="trackArtist">Д.Д. Шостакович</div>
+
+          <div class="audio-controls-row">
+            <button class="play-btn" id="mainPlayBtn" onclick="toggleMainAudio()">▶</button>
+            
+            <div class="progress-container">
+              <div class="progress-bar-bg" onclick="seekAudio(event, 'mainAudio')">
+                <div class="progress-bar-fill" id="mainProgressBar"></div>
+              </div>
+              <div class="time-display">
+                <span id="mainCurrentTime">0:00</span>
+                <span id="mainDuration">0:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Скрытый аудиоэлемент для прямого воспроизведения -->
+      <audio id="mainAudio" preload="metadata">
+        <source src="https://files.catbox.moe/14b7ja.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- ==========================================
+         НАВИГАЦИЯ ПО ВКЛАДКАМ
+         ========================================== -->
+    <div class="nav-tabs">
+      <button class="tab-btn active" id="tab-feed-btn" onclick="switchTab('feed')">
+        📰 Лента постов
+      </button>
+      <button class="tab-btn" id="tab-messenger-btn" onclick="switchTab('messenger')">
+        💬 Мессенджер
+      </button>
+      <button class="tab-btn" id="tab-quiz-btn" onclick="switchTab('quiz')">
+        🎯 Тест «Какая ты симфония?»
+      </button>
+    </div>
+
+    <!-- ==========================================
+         ВКЛАДКА 1: ЛЕНТА ПОСТОВ
+         ========================================== -->
+    <div class="tab-content active" id="tab-feed">
+
+      <!-- Пост 1 -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="post-author-avatar" alt="Дмитрий Шостакович">
+          <div class="post-author-info">
+            <span class="post-author-name">Дмитрий Шостакович</span>
+            <span class="post-time">12 сентября 1938</span>
+          </div>
+        </div>
+        <div class="post-text">Работа над новым произведением временно приостановлена: главный цензор улёгся прямо на ноты и категорически отказывается мурлыкать. Придётся ждать, пока «авторитет» соизволит проснуться и освободить партитуру. 😸🎹</div>
+        <div class="post-media">
+          <img src="https://preview.redd.it/dimitri-shostakovich-posing-with-a-cat-v0-t054lvue2shc1.jpeg?auto=webp&s=66dac04a91d76bac56537c691709d8de28b62bc7" alt="Шостакович и кот">
+        </div>
+        <div class="post-hashtags">
+          <span class="hashtag">#ДмитрийШостакович</span>
+          <span class="hashtag">#МузыкальныеКоты</span>
+          <span class="hashtag">#ТворческийПроцесс</span>
+          <span class="hashtag">#КомпозиторИПитомец</span>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn" onclick="handleLike(this)">
+            <span class="like-icon">🎼</span> <span class="like-count">142</span> Лайков
+          </button>
+        </div>
+        <div class="comments-section">
+          <div class="comment-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlzDSrEsX3HK4jzhoE916XFx7x4ni-jXLPDhCLGDbHzhzeP74__9XtdMvh&s=10" class="comment-avatar" alt="Соллертинский">
+            <div class="comment-content">
+              <div class="comment-author">Иван Соллертинский</div>
+              <div class="comment-text">Митя, отдай ему ноты! Коты чувствуют фальшь лучше любого музыкального критика.</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="comment-avatar" alt="Шостакович">
+            <div class="comment-content">
+              <div class="comment-author">Дмитрий Шостакович</div>
+              <div class="comment-text">@Иван Соллертинский Иван Иванович, он лёг именно на тональность ре-минор. Похоже, одобрил!</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://soundtimes.ru/images/shkatulka/750.jpg" class="comment-avatar" alt="Хачатурян">
+            <div class="comment-content">
+              <div class="comment-author">Арам Хачатурян</div>
+              <div class="comment-text">Мой бы уже давно погрыз угол бумаги! Тебе ещё повезло с воспитанным котом.</div>
+            </div>
+          </div>
+          <div class="add-comment-box">
+            <input type="text" class="comment-input" placeholder="Написать комментарий...">
+            <button class="send-comment-btn" onclick="addComment(this)">➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Пост 2 -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="post-author-avatar" alt="Дмитрий Шостакович">
+          <div class="post-author-info">
+            <span class="post-author-name">Дмитрий Шостакович</span>
+            <span class="post-time">24 октября 1945</span>
+          </div>
+        </div>
+        <div class="post-text">Учите детей музыке с самого детства! И дело совсем не в том, чтобы вырастить из каждого профессионального музыканта. Главное — сделать их чуткими, добрыми и внимательными к миру.
+
+Человек, научившийся чувствовать красоту простой мелодии, никогда не вырастет равнодушным. Музыка учит доброте и сопереживанию гораздо лучше, чем любые долгие нотации и правила. 🎶✨</div>
+        <div class="post-hashtags">
+          <span class="hashtag">#МузыкальноеВоспитание</span>
+          <span class="hashtag">#ДетскийАльбом</span>
+          <span class="hashtag">#КрасотаМузыки</span>
+          <span class="hashtag">#Развитие</span>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn" onclick="handleLike(this)">
+            <span class="like-icon">🎼</span> <span class="like-count">389</span> Лайков
+          </button>
+        </div>
+        <div class="comments-section">
+          <div class="comment-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlzDSrEsX3HK4jzhoE916XFx7x4ni-jXLPDhCLGDbHzhzeP74__9XtdMvh&s=10" class="comment-avatar" alt="Соллертинский">
+            <div class="comment-content">
+              <div class="comment-author">Иван Соллертинский</div>
+              <div class="comment-text">Митя, твой «Детский альбом» — лучшее тому подтверждение. Простые пьесы, а сколько в них эмоций.</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="comment-avatar" alt="Шостакович">
+            <div class="comment-content">
+              <div class="comment-author">Дмитрий Шостакович</div>
+              <div class="comment-text">@Иван Соллертинский Для детей писать сложнее всего, Иван Иванович. Ребёнка невозможно обмануть — он сразу чувствует, где неискренне.</div>
+            </div>
+          </div>
+          <div class="add-comment-box">
+            <input type="text" class="comment-input" placeholder="Написать комментарий...">
+            <button class="send-comment-btn" onclick="addComment(this)">➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Пост 3 -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="post-author-avatar" alt="Дмитрий Шостакович">
+          <div class="post-author-info">
+            <span class="post-author-name">Дмитрий Шостакович</span>
+            <span class="post-time">15 ноября 1961</span>
+          </div>
+        </div>
+        <div class="post-text">Занимался сегодня со студентами в консерватории. Техника у ребят отличная, но все сразу пытаются писать что-то «огромное» и «величественное».
+
+Сказал им: если вы не можете придумать простую, честную и красивую мелодию всего из нескольких тактов, не беритесь за целую симфонию. Сначала научитесь слушать тишину и ценить простые вещи. 🎼</div>
+        <div class="post-media">
+          <img src="https://rossaprimavera.ru/static/files/dbabe83cb9ec.jpg" alt="Шостакович в консерватории">
+        </div>
+        <div class="post-hashtags">
+          <span class="hashtag">#СоветыМолодымМузыкантам</span>
+          <span class="hashtag">#УрокиМузыки</span>
+          <span class="hashtag">#ШостаковичПедагог</span>
+          <span class="hashtag">#Консерватория</span>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn" onclick="handleLike(this)">
+            <span class="like-icon">🎼</span> <span class="like-count">210</span> Лайков
+          </button>
+        </div>
+        <div class="comments-section">
+          <div class="comment-item">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/4/4a/%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87_%D0%A2%D0%B8%D1%89%D0%B5%D0%BD%D0%BA%D0%BE.jpg?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" class="comment-avatar" alt="Тищенко">
+            <div class="comment-content">
+              <div class="comment-author">Борис Тищенко</div>
+              <div class="comment-text">Дмитрий Дмитриевич, спасибо за урок! Всё ещё обдумываю ваши слова.</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="comment-avatar" alt="Шостакович">
+            <div class="comment-content">
+              <div class="comment-author">Дмитрий Шостакович</div>
+              <div class="comment-text">@Борис Тищенко Боря, меньше думайте о сухих правилах и больше о том, зачем вы пишете эту ноту. Технику можно наработать, а смысл за вас никто не придумает!</div>
+            </div>
+          </div>
+          <div class="add-comment-box">
+            <input type="text" class="comment-input" placeholder="Написать комментарий...">
+            <button class="send-comment-btn" onclick="addComment(this)">➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Пост 4 -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="post-author-avatar" alt="Дмитрий Шостакович">
+          <div class="post-author-info">
+            <span class="post-author-name">Дмитрий Шостакович</span>
+            <span class="post-time">03 февраля 1950</span>
+          </div>
+        </div>
+        <div class="post-text">Лучший способ переключить мозг и отвлечься от бесконечных мелодий в голове — это хорошая настольная или карточная игра. Например, преферанс! 🃏
+
+Здесь, как и в шахматах, нужен точный математический расчёт, холодная логика и полная концентрация. Никакого витания в облаках! Сыграли сегодня с коллегами-композиторами три партии.</div>
+        <div class="post-hashtags">
+          <span class="hashtag">#ОтдыхКомпозитора</span>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn" onclick="handleLike(this)">
+            <span class="like-icon">🎼</span> <span class="like-count">175</span> Лайков
+          </button>
+        </div>
+        <div class="comments-section">
+          <div class="comment-item">
+            <img src="https://soundtimes.ru/images/shkatulka/750.jpg" class="comment-avatar" alt="Хачатурян">
+            <div class="comment-content">
+              <div class="comment-author">Арам Хачатурян</div>
+              <div class="comment-text">Дмитрий Дмитриевич, ваш ход сегодня был так же беспощаден, как финал вашей Пятой симфонии! Вы оставили нас без копейки.</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="comment-avatar" alt="Шостакович">
+            <div class="comment-content">
+              <div class="comment-author">Дмитрий Шостакович</div>
+              <div class="comment-text">@Арам Хачатурян Арам Ильич, в картах, как и в музыке, ошибки не прощают. Учите матчасть! 😉</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlzDSrEsX3HK4jzhoE916XFx7x4ni-jXLPDhCLGDbHzhzeP74__9XtdMvh&s=10" class="comment-avatar" alt="Соллертинский">
+            <div class="comment-content">
+              <div class="comment-author">Иван Соллертинский</div>
+              <div class="comment-text">В следующий раз играем у меня, и чур без ваших математических фокусов!</div>
+            </div>
+          </div>
+          <div class="add-comment-box">
+            <input type="text" class="comment-input" placeholder="Написать комментарий...">
+            <button class="send-comment-btn" onclick="addComment(this)">➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Пост 5 -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="post-author-avatar" alt="Дмитрий Шостакович">
+          <div class="post-author-info">
+            <span class="post-author-name">Дмитрий Шостакович</span>
+            <span class="post-time">19 сентября 1941</span>
+          </div>
+        </div>
+        <div class="post-text">Меня часто спрашивают о вдохновении. Но о каком «особом настроении» может идти речь, когда вокруг рушится мир?
+
+Налёты на Ленинград, вой сирен, дежурства на крыше Консерватории, где приходилось на лету гасить зажигательные бомбы. А в перерывах — партитура Седьмой симфонии.
+
+Я писал её не потому, что пришла Муза. А потому, что не мог иначе. Дисциплина и ежедневная работа — вот единственная настоящая опора композитора, особенно в самые тёмные времена.</div>
+        <div class="post-hashtags">
+          <span class="hashtag">#СедьмаяСимфония</span>
+          <span class="hashtag">#ЛенинградскаяСимфония</span>
+          <span class="hashtag">#БлокадаЛенинграда</span>
+          <span class="hashtag">#СилаДуха</span>
+          <span class="hashtag">#МузыкаПротивВойны</span>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn" onclick="handleLike(this)">
+            <span class="like-icon">🎼</span> <span class="like-count">890</span> Лайков
+          </button>
+        </div>
+        <div class="comments-section">
+          <div class="comment-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Sergei_Prokofiev_circa_1918_over_Chair_Bain.jpg?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" class="comment-avatar" alt="Прокофьев">
+            <div class="comment-content">
+              <div class="comment-author">Сергей Прокофьев</div>
+              <div class="comment-text">Дмитрий Дмитриевич, вы опять пишете партитуры сразу набело тушью без черновиков? Поражаюсь вашей феноменальной памяти!</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="comment-avatar" alt="Шостакович">
+            <div class="comment-content">
+              <div class="comment-author">Дмитрий Шостакович</div>
+              <div class="comment-text">@Сергей Прокофьев А зачем тратить бумагу? Музыка в голове уже полностью готова, остается её просто записать!</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlzDSrEsX3HK4jzhoE916XFx7x4ni-jXLPDhCLGDbHzhzeP74__9XtdMvh&s=10" class="comment-avatar" alt="Соллертинский">
+            <div class="comment-content">
+              <div class="comment-author">Иван Соллертинский</div>
+              <div class="comment-text">Митя, береги себя. То, что ты делаешь сейчас — это больше, чем просто симфония. Мы все ждем партитуру.</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://www.kino-teatr.ru/acter/album/282799/250943.jpg" class="comment-avatar" alt="Ростропович">
+            <div class="comment-content">
+              <div class="comment-author">Мстислав Ростропович</div>
+              <div class="comment-text">Каждая страница этой рукописи — уже история. Склоняю голову.</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://media.sddf.ru/Persons/Mravinskiy.jpg" class="comment-avatar" alt="Мравинский">
+            <div class="comment-content">
+              <div class="comment-author">Евгений Мравинский</div>
+              <div class="comment-text">Ноты получил. Начинаем учить с оркестром. Это звучит мощно и страшно.</div>
+            </div>
+          </div>
+          <div class="add-comment-box">
+            <input type="text" class="comment-input" placeholder="Написать комментарий...">
+            <button class="send-comment-btn" onclick="addComment(this)">➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Пост 6 -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="post-author-avatar" alt="Дмитрий Шостакович">
+          <div class="post-author-info">
+            <span class="post-author-name">Дмитрий Шостакович</span>
+            <span class="post-time">02 мая 1939</span>
+          </div>
+        </div>
+        <div class="post-text">Вчера снова был на стадионе — играл наш ленинградский «Зенит»! По этому случаю завёл свежую тетрадь. Теперь фиксирую не просто итоговый счёт, а буквально всё: каждый фол, угловой и тактическую комбинацию. Статистика требует точности!
+
+Кстати, на спорные моменты я теперь смотрю взглядом профессионала, ведь экзамен сдан и официальное удостоверение футбольного судьи — у меня в кармане. Так что спорить со мной о правилах на трибунах бесполезно. В футболе, как и в симфоническом оркестре, фальшь недопустима, а дисциплина должна быть железной! 😉</div>
+        <div class="post-media">
+          <img src="https://photobooth.cdn.sports.ru/preset/post/8/3b/3a684ad9540c19980a851e49cdfd6.jpeg?f=webp&q=90&s=2x&w=730" alt="Шостакович на футболе">
+        </div>
+        <div class="post-hashtags">
+          <span class="hashtag">#ФКЗенит</span>
+          <span class="hashtag">#ФутбольныйАрбитр</span>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn" onclick="handleLike(this)">
+            <span class="like-icon">🎼</span> <span class="like-count">310</span> Лайков
+          </button>
+        </div>
+        <div class="comments-section">
+          <div class="add-comment-box">
+            <input type="text" class="comment-input" placeholder="Написать комментарий...">
+            <button class="send-comment-btn" onclick="addComment(this)">➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Пост 7: С АУДИОПЛЕЕРОМ ОПЕРЫ "НОС" НА САЙТЕ -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="post-author-avatar" alt="Дмитрий Шостакович">
+          <div class="post-author-info">
+            <span class="post-author-name">Дмитрий Шостакович</span>
+            <span class="post-time">18 января 1930</span>
+          </div>
+        </div>
+        
+        <!-- ВСТРОЕННЫЙ АУДИОПЛЕЕР ПОСТА (ВОСПРОИЗВЕДЕНИЕ НА САЙТЕ) -->
+        <div style="background: rgba(212, 175, 55, 0.08); border: 1px solid var(--gold-primary); border-radius: 12px; padding: 14px; margin-bottom: 14px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <div style="font-size: 13px; font-weight: bold; color: var(--gold-light);">
+              🎧 Д.Д. Шостакович — Опера «Нос» ("Он, точно он!")
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <button class="play-btn" id="post7PlayBtn" onclick="togglePost7Audio()">▶</button>
+            <div class="progress-container">
+              <div class="progress-bar-bg" onclick="seekAudio(event, 'post7Audio')">
+                <div class="progress-bar-fill" id="post7ProgressBar"></div>
+              </div>
+              <div class="time-display">
+                <span id="post7CurrentTime">0:00</span>
+                <span id="post7Duration">0:00</span>
+              </div>
+            </div>
+          </div>
+          <audio id="post7Audio" preload="metadata">
+            <source src="https://files.catbox.moe/fa3pmn.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+
+        <div class="post-text">Завершил работу над оперой по повести Гоголя. Многим кажется, что классическая музыка — это всегда строго и серьезно. Но что может быть лучше хорошей шутки? В этой музыке много шума, юмора и даже некоторой «дерзости». Если вам кажется, что в консерватории нельзя улыбаться — послушайте, как у меня поют персонажи, потерявшие собственный нос!</div>
+        <div class="post-hashtags">
+          <span class="hashtag">#ОпераНос</span>
+          <span class="hashtag">#Гоголь</span>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn" onclick="handleLike(this)">
+            <span class="like-icon">🎼</span> <span class="like-count">512</span> Лайков
+          </button>
+        </div>
+        <div class="comments-section">
+          <div class="comment-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Sergei_Prokofiev_circa_1918_over_Chair_Bain.jpg?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" class="comment-avatar" alt="Прокофьев">
+            <div class="comment-content">
+              <div class="comment-author">Сергей Прокофьев</div>
+              <div class="comment-text">Наконец-то хоть кто-то решил встряхнуть эту академическую тишину! Ритм отличный, хотя пара трюков — дерзость даже для меня.</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="comment-avatar" alt="Шостакович">
+            <div class="comment-content">
+              <div class="comment-author">Дмитрий Шостакович</div>
+              <div class="comment-text">@Сергей Сергеевич От вас, Сергей Сергеевич, упрёк в «переборе» звучит как высшая похвала.</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlzDSrEsX3HK4jzhoE916XFx7x4ni-jXLPDhCLGDbHzhzeP74__9XtdMvh&s=10" class="comment-avatar" alt="Соллертинский">
+            <div class="comment-content">
+              <div class="comment-author">Иван Соллертинский</div>
+              <div class="comment-text">Это блестящая победа сатиры над бытом! Дмитрий, не слушайте сухарей, публика обомлеет)</div>
+            </div>
+          </div>
+          <div class="add-comment-box">
+            <input type="text" class="comment-input" placeholder="Написать комментарий...">
+            <button class="send-comment-btn" onclick="addComment(this)">➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Пост 8 -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="post-author-avatar" alt="Дмитрий Шостакович">
+          <div class="post-author-info">
+            <span class="post-author-name">Дмитрий Шостакович</span>
+            <span class="post-time">14 июня 1928</span>
+          </div>
+        </div>
+        <div class="post-text">Многие думают, что годы, проведённые за озвучкой немого кино — это потерянное время. Но сегодня я понимаю, насколько этот опыт был важен! 🎬
+
+Быстрая смена кадров, мгновенный переход от драмы к комедии, резкий монтаж — всё это я впервые попробовал и прочувствовал именно тогда, сидя за пианино в тёмном зале под стук кинопроектора.</div>
+        <div class="post-hashtags">
+          <span class="hashtag">#НемоеКино</span>
+          <span class="hashtag">#Киномузыка</span>
+          <span class="hashtag">#КомпозиторИКино</span>
+          <span class="hashtag">#ОпытТапёра</span>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn" onclick="handleLike(this)">
+            <span class="like-icon">🎼</span> <span class="like-count">198</span> Лайков
+          </button>
+        </div>
+        <div class="comments-section">
+          <div class="add-comment-box">
+            <input type="text" class="comment-input" placeholder="Написать комментарий...">
+            <button class="send-comment-btn" onclick="addComment(this)">➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Пост 9 -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="post-author-avatar" alt="Дмитрий Шостакович">
+          <div class="post-author-info">
+            <span class="post-author-name">Дмитрий Шостакович</span>
+            <span class="post-time">05 ноября 1924</span>
+          </div>
+        </div>
+        <div class="post-text">Сегодня меня с треском уволили из «Пикадилли». Администратор заявил, что я вместо стандартных вальсов и маршей начинаю импровизировать прямо во время комических сцен. Зрители вместо того, чтобы смотреть на экран, поворачивались к пианино и слушали. Оказывается, тапёр должен быть невидимой деталью интерьера, а не самостоятельным композитором. Что ж, прощай, кинематограф, возвращаюсь к своим симфониям!</div>
+        <div class="post-hashtags">
+          <span class="hashtag">#ТапёрИмпровизатор</span>
+          <span class="hashtag">#ИсторияИзЖизни</span>
+          <span class="hashtag">#ЮностьКомпозитора</span>
+          <span class="hashtag">#СимфоническийПуть</span>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn" onclick="handleLike(this)">
+            <span class="like-icon">🎼</span> <span class="like-count">420</span> Лайков
+          </button>
+        </div>
+        <div class="comments-section">
+          <div class="comment-item">
+            <img src="https://soundtimes.ru/images/shkatulka/750.jpg" class="comment-avatar" alt="Хачатурян">
+            <div class="comment-content">
+              <div class="comment-author">Арам Хачатурян</div>
+              <div class="comment-text">Это же лучший комплимент для музыканта! Тебя уволили за то, что твоя музыка оказалась интереснее кино!</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://www.kino-teatr.ru/acter/album/282799/250943.jpg" class="comment-avatar" alt="Ростропович">
+            <div class="comment-content">
+              <div class="comment-author">Мстислав Ростропович</div>
+              <div class="comment-text">Дмитрий Дмитриевич, представлю эту картину: зал бросает смотреть на экран и слушает 18-летнего Шостаковича! Кинотеатр явно потерял больше, чем вы.</div>
+            </div>
+          </div>
+          <div class="add-comment-box">
+            <input type="text" class="comment-input" placeholder="Написать комментарий...">
+            <button class="send-comment-btn" onclick="addComment(this)">➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Пост 10 -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="post-author-avatar" alt="Дмитрий Шостакович">
+          <div class="post-author-info">
+            <span class="post-author-name">Дмитрий Шостакович</span>
+            <span class="post-time">10 марта 1924</span>
+          </div>
+        </div>
+        <div class="post-text">Неделями сижу в зале кинотеатра «Светлая лента». На экране крутят одни и те же глупые мелодрамы и погони, а я часами стучу по расстроенному пианино, у которого западают клавиши. Пальцы отваливаются, глаза слезятся от дыма. Но когда в 17 лет ты остаешься единственным кормильцем в доме после смерти отца, выбирать не приходится. Единственный плюс — это гигантская тренажерная база для беглости пальцев и моментальной импровизации.</div>
+        <div class="post-hashtags">
+          <span class="hashtag">#МолодыеГоды</span>
+          <span class="hashtag">#ТрудИДисциплина</span>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn" onclick="handleLike(this)">
+            <span class="like-icon">🎼</span> <span class="like-count">365</span> Лайков
+          </button>
+        </div>
+        <div class="comments-section">
+          <div class="comment-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlzDSrEsX3HK4jzhoE916XFx7x4ni-jXLPDhCLGDbHzhzeP74__9XtdMvh&s=10" class="comment-avatar" alt="Соллертинский">
+            <div class="comment-content">
+              <div class="comment-author">Иван Соллертинский</div>
+              <div class="comment-text">Митя, зато какая школа! Ни в одной консерватории мира не научат за секунду подбирать музыку под сюжет на экране.</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="comment-avatar" alt="Шостакович">
+            <div class="comment-content">
+              <div class="comment-author">Дмитрий Шостакович</div>
+              <div class="comment-text">@Иван Соллертинский Иван Иванович, школа-то хорошая, но когда тебе в десятый раз за день нужно изображать «страстную погоню» на разбитом инструменте, хочется залезть под сцену.</div>
+            </div>
+          </div>
+          <div class="add-comment-box">
+            <input type="text" class="comment-input" placeholder="Написать комментарий...">
+            <button class="send-comment-btn" onclick="addComment(this)">➔</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==========================================
+         ВКЛАДКА 2: МЕССЕНДЖЕР
+         ========================================== -->
+    <div class="tab-content" id="tab-messenger">
+      <div class="messenger-container">
+        <!-- Список чатов -->
+        <div class="chat-sidebar">
+          <div class="chat-list">
+            <div class="chat-item active" onclick="selectChat('prokofiev')">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Sergei_Prokofiev_circa_1918_over_Chair_Bain.jpg?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" class="chat-item-avatar" alt="Прокофьев">
+              <div class="chat-item-info">
+                <div class="chat-item-name">Сергей Прокофьев</div>
+                <div class="chat-item-preview">Дмитрий! Послушал тут твою...</div>
+              </div>
+            </div>
+
+            <div class="chat-item" onclick="selectChat('akhmatova')">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/%D0%90%D0%BD%D0%BD%D0%B0_%D0%90%D1%85%D0%BC%D0%B0%D1%82%D0%BE%D0%B2%D0%B0_%28cropped%29.png/250px-%D0%90%D0%BD%D0%BD%D0%B0_%D0%90%D1%85%D0%BC%D0%B0%D1%82%D0%BE%D0%B2%D0%B0_%28cropped%29.png?utm_source=ru.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" class="chat-item-avatar" alt="Ахматова">
+              <div class="chat-item-info">
+                <div class="chat-item-name">Анна Ахматова</div>
+                <div class="chat-item-preview">Дмитрий Дмитриевич... Вчера...</div>
+              </div>
+            </div>
+
+            <div class="chat-item" onclick="selectChat('khachaturian')">
+              <img src="https://soundtimes.ru/images/shkatulka/750.jpg" class="chat-item-avatar" alt="Хачатурян">
+              <div class="chat-item-info">
+                <div class="chat-item-name">Арам Хачатурян</div>
+                <div class="chat-item-preview">Митя, привет! Только что с...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Окно диалога -->
+        <div class="chat-window">
+          <div class="chat-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Sergei_Prokofiev_circa_1918_over_Chair_Bain.jpg?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" id="activeChatAvatar" class="chat-item-avatar" alt="Аватар">
+            <div>
+              <div class="chat-item-name" id="activeChatName">Сергей Прокофьев</div>
+              <div style="font-size: 11px; color: var(--gold-primary);">В сети</div>
+            </div>
+          </div>
+
+          <div class="chat-messages" id="chatMessages">
+            <!-- Сообщения будут подгружаться через JS -->
+          </div>
+
+          <div class="typing-indicator" id="typingIndicator">
+            Сергей Прокофьев набирает сообщение...
+          </div>
+
+          <div class="chat-footer">
+            <div class="quick-replies" id="quickReplies">
+              <!-- Кнопки быстрого ответа -->
+            </div>
+            <div style="font-size: 11px; color: var(--text-muted); text-align: center;">
+              Выберите вариант ответа для продолжения диалога
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         ВКЛАДКА 3: ТЕСТ
+         ========================================== -->
+    <div class="tab-content" id="tab-quiz">
+      <div class="quiz-card">
+        <div class="quiz-header">
+          <h2 class="quiz-title">Какая ты симфония Шостаковича сегодня?</h2>
+          <p style="font-size: 13px; color: var(--text-muted);">Ответь на 4 вопроса, чтобы узнать своё музыкальное настроение</p>
+        </div>
+
+        <form id="quizForm">
+          <!-- Вопрос 1 -->
+          <div class="quiz-question">
+            <div class="q-title">1. Как началось твоё утро?</div>
+            <div class="q-options">
+              <label class="q-option-label"><input type="radio" name="q1" value="A"> А) Медленно и хмуро. Хотелось накрыться одеялом и не выходить в этот мир.</label>
+              <label class="q-option-label"><input type="radio" name="q1" value="B"> Б) Бодро и собранно. Сразу режим: «Так, у меня куча дел, сейчас я всё разнесу и всё успею».</label>
+              <label class="q-option-label"><input type="radio" name="q1" value="V"> В) Суетливо! Всё валится из рук, мыслей миллион, в голове играет какой-то мем.</label>
+              <label class="q-option-label"><input type="radio" name="q1" value="G"> Г) Спокойно и тихо. Просто хочется посидеть в наушниках и чтобы никто не трогал.</label>
+            </div>
+          </div>
+
+          <!-- Вопрос 2 -->
+          <div class="quiz-question">
+            <div class="q-title">2. На уроке неожиданно объявили самостоятельную. Твоя реакция:</div>
+            <div class="q-options">
+              <label class="q-option-label"><input type="radio" name="q2" value="A"> А) Молча вздохну. Внутри всё закипает, но снаружи я само спокойствие.</label>
+              <label class="q-option-label"><input type="radio" name="q2" value="B"> Б) Сжимаю ручку и включаю максимальную концентрацию. Я напишу это на максимум!</label>
+              <label class="q-option-label"><input type="radio" name="q2" value="V"> В) Посмеюсь с друзьями над ситуацией. Ну а что ещё остаётся делать?</label>
+              <label class="q-option-label"><input type="radio" name="q2" value="G"> Г) Спокойно достану листочек. Будь что будет, нервничать нет смысла.</label>
+            </div>
+          </div>
+
+          <!-- Вопрос 3 -->
+          <div class="quiz-question">
+            <div class="q-title">3. Идеальный вечер после школы:</div>
+            <div class="q-options">
+              <label class="q-option-label"><input type="radio" name="q3" value="A"> А) Погулять в одиночку с грустной или атмосферной музыкой в ушах.</label>
+              <label class="q-option-label"><input type="radio" name="q3" value="B"> Б) Собрать команду, чтобы вместе сыграть в катку или доделать общий проект.</label>
+              <label class="q-option-label"><input type="radio" name="q3" value="V"> В) Залипнуть в смешные видео, уйти в виртуальный мир или придумать что-то спонтанное.</label>
+              <label class="q-option-label"><input type="radio" name="q3" value="G"> Г) Посидеть в тишине, почитать, порисовать или просто отдохнуть от людей.</label>
+            </div>
+          </div>
+
+          <!-- Вопрос 4 -->
+          <div class="quiz-question">
+            <div class="q-title">4. Твой супернавык прямо сейчас:</div>
+            <div class="q-options">
+              <label class="q-option-label"><input type="radio" name="q4" value="A"> А) Способность видеть всё насквозь и чувствовать всё очень глубоко.</label>
+              <label class="q-option-label"><input type="radio" name="q4" value="B"> Б) Железная воля — меня фиг сломаешь и не сбьешь с толку.</label>
+              <label class="q-option-label"><input type="radio" name="q4" value="V"> В) Юмор и ирония — могу превратить любой стресс в шутку.</label>
+              <label class="q-option-label"><input type="radio" name="q4" value="G"> Г) Мудрость и спокойствие — меня сложно вывести из себя.</label>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary" style="width: 100%; margin-top: 10px;" onclick="calculateQuizResult()">
+            Узнать результат
+          </button>
+        </form>
+
+        <div class="quiz-result" id="quizResult">
+          <h3 class="quiz-result-title" id="resTitle"></h3>
+          <p class="quiz-result-desc" id="resDesc"></p>
+          <div style="background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; font-size: 13px; color: var(--gold-light);" id="resMusic"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ==========================================
+       8. JAVASCRIPT ЛОГИКА
+       ========================================== -->
+  <script>
+    // ------------------------------------------
+    // АУДИОПЛЕЕР (ВОСПРОИЗВЕДЕНИЕ НА САЙТЕ)
+    // ------------------------------------------
+    const tracksList = [
+      {
+        title: "Вальс №2",
+        artist: "Д.Д. Шостакович",
+        src: "https://files.catbox.moe/14b7ja.mp3"
+      }
+    ];
+
+    let currentTrackIdx = 0;
+    const mainAudio = document.getElementById('mainAudio');
+    const mainPlayBtn = document.getElementById('mainPlayBtn');
+    const mainProgressBar = document.getElementById('mainProgressBar');
+    const mainCurrentTime = document.getElementById('mainCurrentTime');
+    const mainDuration = document.getElementById('mainDuration');
+    const mainEq = document.getElementById('mainEq');
+
+    function toggleMainAudio() {
+      if (mainAudio.paused) {
+        // Ставим на паузу аудио в 7 посте, если оно играет
+        if (!post7Audio.paused) post7Audio.pause();
+        
+        mainAudio.play();
+        mainPlayBtn.innerText = "⏸";
+        mainEq.classList.add('playing');
+      } else {
+        mainAudio.pause();
+        mainPlayBtn.innerText = "▶";
+        mainEq.classList.remove('playing');
+      }
+    }
+
+    function playSelectedTrack(idx) {
+      currentTrackIdx = idx;
+      document.getElementById('trackTitle').innerText = tracksList[idx].title;
+      mainAudio.src = tracksList[idx].src;
+      mainAudio.load();
+      toggleMainAudio();
+    }
+
+    mainAudio.addEventListener('timeupdate', () => {
+      if (mainAudio.duration) {
+        const pct = (mainAudio.currentTime / mainAudio.duration) * 100;
+        mainProgressBar.style.width = pct + '%';
+        mainCurrentTime.innerText = formatTime(mainAudio.currentTime);
+        mainDuration.innerText = formatTime(mainAudio.duration);
+      }
+    });
+
+    mainAudio.addEventListener('ended', () => {
+      mainPlayBtn.innerText = "▶";
+      mainEq.classList.remove('playing');
+      mainProgressBar.style.width = '0%';
+    });
+
+    // Аудио в посте 7
+    const post7Audio = document.getElementById('post7Audio');
+    const post7PlayBtn = document.getElementById('post7PlayBtn');
+    const post7ProgressBar = document.getElementById('post7ProgressBar');
+    const post7CurrentTime = document.getElementById('post7CurrentTime');
+    const post7Duration = document.getElementById('post7Duration');
+
+    function togglePost7Audio() {
+      if (post7Audio.paused) {
+        if (!mainAudio.paused) {
+          mainAudio.pause();
+          mainPlayBtn.innerText = "▶";
+          mainEq.classList.remove('playing');
+        }
+        post7Audio.play();
+        post7PlayBtn.innerText = "⏸";
+      } else {
+        post7Audio.pause();
+        post7PlayBtn.innerText = "▶";
+      }
+    }
+
+    post7Audio.addEventListener('timeupdate', () => {
+      if (post7Audio.duration) {
+        const pct = (post7Audio.currentTime / post7Audio.duration) * 100;
+        post7ProgressBar.style.width = pct + '%';
+        post7CurrentTime.innerText = formatTime(post7Audio.currentTime);
+        post7Duration.innerText = formatTime(post7Audio.duration);
+      }
+    });
+
+    post7Audio.addEventListener('ended', () => {
+      post7PlayBtn.innerText = "▶";
+      post7ProgressBar.style.width = '0%';
+    });
+
+    function seekAudio(e, audioId) {
+      const audioEl = document.getElementById(audioId);
+      const rect = e.currentTarget.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const width = rect.width;
+      if (audioEl.duration) {
+        audioEl.currentTime = (clickX / width) * audioEl.duration;
+      }
+    }
+
+    function formatTime(seconds) {
+      const min = Math.floor(seconds / 60);
+      const sec = Math.floor(seconds % 60);
+      return `${min}:${sec < 10 ? '0' : ''}${sec}`;
+    }
+
+    // ------------------------------------------
+    // ПОДПИСКА И ПЕРЕКЛЮЧЕНИЕ ВКЛАДОК
+    // ------------------------------------------
+    let isSubscribed = false;
+    function toggleSubscribe() {
+      const btn = document.getElementById('subscribeBtn');
+      isSubscribed = !isSubscribed;
+      if (isSubscribed) {
+        btn.classList.add('subscribed');
+        btn.innerHTML = '<span>✓ Вы подписаны</span>';
+      } else {
+        btn.classList.remove('subscribed');
+        btn.innerHTML = '<span>+ Подписаться</span>';
+      }
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+      document.getElementById(`tab-${tabId}-btn`).classList.add('active');
+      document.getElementById(`tab-${tabId}`).classList.add('active');
+    }
+
+    // ------------------------------------------
+    // ЛАЙКИ И ЛЕТАЮЩИЕ ЗОЛОТЫЕ НОТЫ
+    // ------------------------------------------
+    function handleLike(btn) {
+      const countEl = btn.querySelector('.like-count');
+      let count = parseInt(countEl.innerText);
+      
+      if (!btn.classList.contains('liked')) {
+        btn.classList.add('liked');
+        countEl.innerText = count + 1;
+        spawnNotes(btn);
+      } else {
+        btn.classList.remove('liked');
+        countEl.innerText = count - 1;
+      }
+    }
+
+    function spawnNotes(btn) {
+      const notes = ['♪', '♫', '♩', '♬'];
+      for (let i = 0; i < 5; i++) {
+        const note = document.createElement('div');
+        note.className = 'flying-note';
+        note.innerText = notes[Math.floor(Math.random() * notes.length)];
+        
+        const dx = (Math.random() - 0.5) * 80;
+        note.style.setProperty('--dx', dx);
+        note.style.left = '20px';
+        note.style.top = '0px';
+
+        btn.appendChild(note);
+        setTimeout(() => note.remove(), 1000);
+      }
+    }
+
+    // ------------------------------------------
+    // ДОБАВЛЕНИЕ КОММЕНТАРИЕВ
+    // ------------------------------------------
+    function addComment(btn) {
+      const input = btn.previousElementSibling;
+      const text = input.value.trim();
+      if (!text) return;
+
+      const commentsSection = btn.closest('.comments-section');
+      const newComment = document.createElement('div');
+      newComment.className = 'comment-item';
+      newComment.innerHTML = `
+        <img src="https://www.lenfilm.ru/files/local/derived/News/h0000/19249/dmitrij-shostakovich-6.Deco.newsItemCover.jpg" class="comment-avatar" alt="Вы">
+        <div class="comment-content">
+          <div class="comment-author">Вы</div>
+          <div class="comment-text">${escapeHtml(text)}</div>
+        </div>
+      `;
+
+      commentsSection.insertBefore(newComment, btn.closest('.add-comment-box'));
+      input.value = '';
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    // ------------------------------------------
+    // ДИАЛОГИ В МЕССЕНДЖЕРЕ (JS STATE & BRANCHING)
+    // ------------------------------------------
+    const chatData = {
+      prokofiev: {
+        name: "Сергей Прокофьев",
+        avatar: "https://upload.wikimedia.org/wikipedia/commons/0/03/Sergei_Prokofiev_circa_1918_over_Chair_Bain.jpg?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original",
+        messages: [
+          { type: 'in', text: 'Дмитрий! Послушал тут твою Пятую симфонию. Отличная работа! Но скажи честно: тебе не хочется снова написать что-то дерзкое и бунтарское, как в юности?' },
+          { type: 'in', text: 'Наше время требует энергии, резких ритмов и смелости, а не только классических правил!' }
+        ],
+        replies: [
+          { text: '«Правила дают порядок, Сергей. Юношеский бунт — это хорошо, но сейчас мне важнее передать в музыке чувства и тревоги людей.»', key: 'A' },
+          { text: '«А кто сказал, что я стал спокойнее? Смелые идеи никуда не исчезли, просто теперь они спрятаны глубже между нот.»', key: 'B' }
+        ],
+        answers: {
+          A: {
+            userText: 'Правила дают порядок, Сергей. Юношеский бунт — это хорошо, но сейчас мне важнее передать в музыке чувства и тревоги людей.',
+            replyText: 'Понимаю тебя. Передавать грусть и глубину — это твоя суперсила. Но всё же не забывай добавлять яркие и светлые мелодии, чтобы слушатель не загрустил окончательно!'
+          },
+          B: {
+            userText: 'А кто сказал, что я стал спокойнее? Смелые идеи никуда не исчезли, просто теперь они спрятаны глубже между нот.',
+            replyText: 'А вот тут я с тобой согласен! Простая и красивая музыка — это скучно. Главное, чтобы наши резкие аккорды заставляли слушателя думать, а не просто хлопать!'
+          }
+        }
+      },
+      akhmatova: {
+        name: "Анна Ахматова",
+        avatar: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/%D0%90%D0%BD%D0%BD%D0%B0_%D0%90%D1%85%D0%BC%D0%B0%D1%82%D0%BE%D0%B2%D0%B0_%28cropped%29.png/250px-%D0%90%D0%BD%D0%BD%D0%B0_%D0%90%D1%85%D0%BC%D0%B0%D1%82%D0%BE%D0%B2%D0%B0_%28cropped%29.png?utm_source=ru.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+        messages: [
+          { type: 'in', text: 'Дмитрий Дмитриевич... Вчера слушала ваш новый квартет. В этой музыке столько боли и правды о нашем времени, о которых мы иногда даже не можем сказать вслух.' },
+          { type: 'in', text: 'Как вам удаётся так точно передавать в звуках то, что происходит у людей на душе?' }
+        ],
+        replies: [
+          { text: '«Анна Андреевна, музыке не нужны слова. Она говорит напрямую с сердцем, поэтому её невозможно заставить молчать.»', key: 'A' },
+          { text: '«Я просто честно записываю нотами всё, что чувствую вокруг. А ваши стихи всегда дают мне сил не сдаваться.»', key: 'B' }
+        ],
+        answers: {
+          A: {
+            userText: 'Анна Андреевна, музыке не нужны слова. Она говорит напрямую с сердцем, поэтому её невозможно заставить молчать.',
+            replyText: 'Вы абсолютно правы. Музыка — это наш тайный язык. Мы, поэты, даже немного завидуем тому, как вы умеете передавать чувства без единого слова.'
+          },
+          B: {
+            userText: 'Я просто честно записываю нотами всё, что чувствую вокруг. А ваши стихи всегда дают мне сил не сдаваться.',
+            replyText: 'Мы с вами делаем одно важное дело — сохраняем историю. Пока звучит ваша музыка и читаются наши стихи, память о нашем времени будет жить.'
+          }
+        }
+      },
+      khachaturian: {
+        name: "Арам Хачатурян",
+        avatar: "https://soundtimes.ru/images/shkatulka/750.jpg",
+        messages: [
+          { type: 'in', text: 'Митя, привет! Только что с очередного собрания композиторов. Все опять спорят о том, какой должна быть правильная музыка... А я им говорю: добавьте огня, ритма и народных мелодий!' },
+          { type: 'in', text: 'Ты сам как? Находишь время для творчества среди всех этих бесконечных бумаг и отчётов?' }
+        ],
+        replies: [
+          { text: '«Твой восточный темперамент всегда поднимает настроение, Арам! А отчёты... что поделать, приходится терпеть ради музыки.»', key: 'A' },
+          { text: '«Ты отлично показываешь, как народная музыка может звучать современно. Твой "Танец с саблями" до сих пор у всех на слуху!»', key: 'B' }
+        ],
+        answers: {
+          A: {
+            userText: 'Твой восточный темперамент всегда поднимает настроение, Арам! А отчёты... что поделать, приходится терпеть ради музыки.',
+            replyText: 'Эх, это точно! Без поддержки друзей тут не справиться. Заходи вечером в гости — покажу пару новых зажигательных ритмов!'
+          },
+          B: {
+            userText: 'Ты отлично показываешь, как народная музыка может звучать современно. Твой "Танец с саблями" до сих пор у всех на слуху!',
+            replyText: 'Спасибо, Митя! Моя секретная формула проста: взять старинную народную песню или танец и вложить туда энергию сегодняшнего дня. Тогда музыка будет жить вечно!'
+          }
+        }
+      }
+    };
+
+    let currentChatKey = 'prokofiev';
+
+    function selectChat(key) {
+      currentChatKey = key;
+      document.querySelectorAll('.chat-item').forEach(item => item.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+
+      const chat = chatData[key];
+      document.getElementById('activeChatAvatar').src = chat.avatar;
+      document.getElementById('activeChatName').innerText = chat.name;
+
+      renderMessages();
+    }
+
+    function renderMessages() {
+      const chat = chatData[currentChatKey];
+      const container = document.getElementById('chatMessages');
+      container.innerHTML = `<div class="msg-date-divider">Архив переписки</div>`;
+
+      chat.messages.forEach(msg => {
+        const div = document.createElement('div');
+        div.className = `msg-bubble msg-${msg.type}`;
+        div.innerText = msg.text;
+        container.appendChild(div);
+      });
+
+      container.scrollTop = container.scrollHeight;
+
+      // Отрисовка быстрых ответов
+      const repliesContainer = document.getElementById('quickReplies');
+      repliesContainer.innerHTML = '';
+
+      if (chat.replies && chat.replies.length > 0) {
+        chat.replies.forEach(rep => {
+          const btn = document.createElement('button');
+          btn.className = 'reply-btn';
+          btn.innerText = rep.text;
+          btn.onclick = () => handleUserReply(rep.key);
+          repliesContainer.appendChild(btn);
+        });
+      }
+    }
+
+    function handleUserReply(key) {
+      const chat = chatData[currentChatKey];
+      const answerData = chat.answers[key];
+
+      // Добавляем исходящее сообщение от Шостаковича
+      chat.messages.push({ type: 'out', text: answerData.userText });
+      chat.replies = []; // Убираем кнопки
+      renderMessages();
+
+      // Показываем индикатор набора текста
+      const indicator = document.getElementById('typingIndicator');
+      indicator.innerText = `${chat.name} набирает сообщение...`;
+      indicator.style.display = 'block';
+
+      setTimeout(() => {
+        indicator.style.display = 'none';
+        chat.messages.push({ type: 'in', text: answerData.replyText });
+        renderMessages();
+      }, 1500);
+    }
+
+    // Первичная инициализация первого чата
+    renderMessages();
+
+    // ------------------------------------------
+    // ТЕСТ "КАКАЯ ТЫ СИМФОНИЯ?"
+    // ------------------------------------------
+    function calculateQuizResult() {
+      const form = document.getElementById('quizForm');
+      const q1 = form.q1.value;
+      const q2 = form.q2.value;
+      const q3 = form.q3.value;
+      const q4 = form.q4.value;
+
+      if (!q1 || !q2 || !q3 || !q4) {
+        alert("Пожалуйста, ответьте на все 4 вопроса!");
+        return;
+      }
+
+      const counts = { A: 0, B: 0, V: 0, G: 0 };
+      [q1, q2, q3, q4].forEach(val => counts[val] = (counts[val] || 0) + 1);
+
+      let maxKey = 'A';
+      let maxVal = 0;
+      for (const k in counts) {
+        if (counts[k] > maxVal) {
+          maxVal = counts[k];
+          maxKey = k;
+        }
+      }
+
+      const resDiv = document.getElementById('quizResult');
+      const titleEl = document.getElementById('resTitle');
+      const descEl = document.getElementById('resDesc');
+      const musicEl = document.getElementById('resMusic');
+
+      if (maxKey === 'A') {
+        titleEl.innerText = "Симфония № 10 (Загадочная и мощная)";
+        descEl.innerText = "Твоя атмосфера: Скрытая сила и глубокие эмоции.\nТы сегодня — человек-загадка. Снаружи ты можешь казаться тихим и спокойным, но внутри у тебя кипит настоящая буря. Ты всё замечаешь, много думаешь и умеешь справляться со сложными чувствами.";
+        musicEl.innerText = "🎵 Что послушать: Симфония № 10, II часть — очень быстрая, громкая и драйвовая музыка.";
+      } else if (maxKey === 'B') {
+        titleEl.innerText = "Симфония № 7 «Ленинградская» (Героическая)";
+        descEl.innerText = "Твоя атмосфера: Несломленный характер и суперэнергия.\nТы сегодня — главный герой эпопеи! Любые контрольные, трудности или проблемы сталкиваются с твоей железной выдержкой. Ты готов идти до конца и помогать друзьям.";
+        musicEl.innerText = "🎵 Что послушать: Симфония № 7, I часть — легендарная музыка, где звук растёт от тихого шепота до мощи.";
+      } else if (maxKey === 'V') {
+        titleEl.innerText = "Симфония № 9 (Ироничная и дерзкая)";
+        descEl.innerText = "Твоя атмосфера: Юмор, позитив и лёгкий бунт.\nТы отказываешься относиться к жизни слишком серьёзно. Если что-то идет не так, твоё главное оружие — шутка и ирония.";
+        musicEl.innerText = "🎵 Что послушать: Симфония № 9, I часть — игривая, прыгающая мелодия, похожая на весёлую подлянку.";
+      } else {
+        titleEl.innerText = "Симфония № 14 (Мечтательная и спокойная)";
+        descEl.innerText = "Твоя атмосфера: Тишина, уют и философское настроение.\nТебе сегодня абсолютно не хочется суеты и лишней драмы. Ты ценишь искренность и любишь побыть наедине со своими мыслями.";
+        musicEl.innerText = "🎵 Что послушать: Симфония № 14, I часть — таинственная и глубокая музыка для спокойного вечера.";
+      }
+
+      resDiv.style.display = 'block';
+      resDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
